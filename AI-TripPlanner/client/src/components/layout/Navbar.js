@@ -9,6 +9,7 @@ import {
   FaSignOutAlt,
   FaMapMarkedAlt,
   FaRoute,
+  FaPlane,
   FaChartBar,
 } from "react-icons/fa";
 

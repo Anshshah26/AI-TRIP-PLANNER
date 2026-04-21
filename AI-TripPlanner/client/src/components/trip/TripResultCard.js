@@ -15,6 +15,7 @@ import {
 
 const TripResultCard = ({ itinerary, formValues, onViewDetails }) => {
   const [imageError, setImageError] = useState(false);
+  const [isAddingTrip, setIsAddingTrip] = useState(false);
   const navigate = useNavigate();
 
   const handleAddTrip = async () => {

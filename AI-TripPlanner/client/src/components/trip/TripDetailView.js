@@ -15,11 +15,15 @@ import {
   FaChevronDown,
   FaChevronUp,
   FaTimes,
+  FaDownload,
+  FaPlus,
 } from "react-icons/fa";
 
 const TripDetailView = ({ itinerary, formValues, onClose }) => {
   const [expandedDays, setExpandedDays] = useState([0]); // First day expanded by default
   const [isDownloading, setIsDownloading] = useState(false);
+  const [isAddingTrip, setIsAddingTrip] = useState(false);
+  const [imageErrors, setImageErrors] = useState({});
   const navigate = useNavigate();
   const queryClient = useQueryClient();
 
