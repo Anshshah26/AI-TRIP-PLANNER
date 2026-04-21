@@ -1,0 +1,52 @@
+services:
+  - type: web
+    name: ai-trip-planner-backend
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    autoDeploy: false
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        scope: build
+        value: ${MONGODB_URI}
+      - key: JWT_ACCESS_SECRET
+        scope: build
+        value: ${JWT_ACCESS_SECRET}
+      - key: JWT_REFRESH_SECRET
+        scope: build
+        value: ${JWT_REFRESH_SECRET}
+      - key: SESSION_SECRET
+        scope: build
+        value: ${SESSION_SECRET}
+      - key: CLIENT_URL
+        value: https://your-frontend-url.vercel.app
+      - key: ALLOWED_ORIGINS
+        value: https://your-frontend-url.vercel.app
+      - key: GEMINI_API_KEY
+        scope: build
+        value: ${GEMINI_API_KEY}
+      - key: EMAIL_HOST
+        scope: build
+        value: ${EMAIL_HOST}
+      - key: EMAIL_PORT
+        scope: build
+        value: ${EMAIL_PORT}
+      - key: EMAIL_SECURE
+        scope: build
+        value: ${EMAIL_SECURE}
+      - key: EMAIL_USER
+        scope: build
+        value: ${EMAIL_USER}
+      - key: EMAIL_PASS
+        scope: build
+        value: ${EMAIL_PASS}
+      - key: EMAIL_FROM
+        scope: build
+        value: ${EMAIL_FROM}
+      - key: LOG_LEVEL
+        value: info
