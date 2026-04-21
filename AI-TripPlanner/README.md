@@ -518,15 +518,6 @@ This project is licensed under the **MIT License**.
 
 ---
 
-## Author
-
-**Harsh Lad**  
-Full Stack & AI Engineer
-
-- **GitHub**: [@ladHarsh](https://github.com/ladHarsh)
-- **Portfolio**: [harshlad.vercel.app](https://harshlad.vercel.app/)
-- **Email**: harshlad.dev@gmail.com
-
 ---
 
 ## Acknowledgments
@@ -553,8 +544,11 @@ If you encounter issues:
 
 **AI Trip Planner** — Practical AI-assisted travel planning with real-world, free data.
 
-Made with ❤️ by Harsh Lad
-#   A I - T R I P - P L A N N E R  
- #   A I - T R I P - P L A N N E R  
- #   A I - T R I P - P L A N N E R  
+Made with ❤️ by Ansh shah
+#   A I - T R I P - P L A N N E R 
+ 
+ #   A I - T R I P - P L A N N E R 
+ 
+ #   A I - T R I P - P L A N N E R 
+ 
  
