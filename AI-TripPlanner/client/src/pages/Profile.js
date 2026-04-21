@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { toast } from "react-hot-toast";
 import { useAuth } from "../contexts/AuthContext";
 import { userAPI } from "../services/api";
-import { Card, Button, Input, LoadingSpinner } from "../components/ui";
+import { Card, Button, Input } from "../components/ui";
 import {
   FaUser,
   FaEnvelope,

@@ -2,17 +2,13 @@ import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAuth } from "../../contexts/AuthContext";
-import { useNotifications } from "../../contexts/NotificationContext";
-import { Button } from "../ui";
 import {
   FaBars,
   FaTimes,
   FaUser,
   FaSignOutAlt,
   FaMapMarkedAlt,
-  FaPlane,
   FaRoute,
-  FaBell,
   FaChartBar,
 } from "react-icons/fa";
 
@@ -21,12 +17,9 @@ const Navbar = () => {
     user,
     isAuthenticated,
     logout,
-    hasPermission,
     getRemainingAiRequests,
   } = useAuth();
-  const { notifications, unreadCount, markAllAsRead } = useNotifications();
   const [isOpen, setIsOpen] = useState(false);
-  const [showNotifications, setShowNotifications] = useState(false);
   const [showUserMenu, setShowUserMenu] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();

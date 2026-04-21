@@ -14,7 +14,6 @@ import {
   FaShieldAlt,
   FaRocket,
   FaGlobe,
-  FaHeart,
 } from "react-icons/fa";
 
 const Register = () => {

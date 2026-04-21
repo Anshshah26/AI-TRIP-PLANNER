@@ -10,21 +10,15 @@ import {
   FaDollarSign,
   FaUtensils,
   FaHotel,
-  FaPlane,
   FaStar,
   FaInfoCircle,
   FaChevronDown,
   FaChevronUp,
-  FaDownload,
-  FaShare,
   FaTimes,
-  FaPlus,
 } from "react-icons/fa";
 
 const TripDetailView = ({ itinerary, formValues, onClose }) => {
   const [expandedDays, setExpandedDays] = useState([0]); // First day expanded by default
-  const [imageErrors, setImageErrors] = useState({});
-  const [isAddingTrip, setIsAddingTrip] = useState(false);
   const [isDownloading, setIsDownloading] = useState(false);
   const navigate = useNavigate();
   const queryClient = useQueryClient();

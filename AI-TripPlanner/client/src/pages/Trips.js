@@ -12,7 +12,6 @@ import {
   FaStar,
   FaUsers,
   FaDollarSign,
-  FaFilter,
   FaSearch,
 } from "react-icons/fa";
 
@@ -52,9 +51,6 @@ const Trips = () => {
 
       if (filter === "all") {
         // Exclude drafts from "All Trips" and show upcoming/completed
-        const now = new Date();
-        const endDate = new Date(trip.endDate);
-        // Show upcoming and completed trips
         return trip.status !== "draft";
       }
 

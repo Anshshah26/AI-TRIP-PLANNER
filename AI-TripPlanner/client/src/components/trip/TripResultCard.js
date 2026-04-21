@@ -10,24 +10,12 @@ import {
   FaRupeeSign,
   FaStar,
   FaArrowRight,
-  FaDownload,
-  FaPlus,
   FaEye,
 } from "react-icons/fa";
 
 const TripResultCard = ({ itinerary, formValues, onViewDetails }) => {
   const [imageError, setImageError] = useState(false);
-  const [isAddingTrip, setIsAddingTrip] = useState(false);
   const navigate = useNavigate();
-
-  const handleDownloadPDF = () => {
-    toast.success(
-      "Generating PDF... This feature will download your trip itinerary!"
-    );
-    // TODO: Implement PDF generation
-    // This would typically call an API endpoint that generates a PDF
-    // Example: window.open(`/api/trips/download-pdf/${tripId}`, '_blank');
-  };
 
   const handleAddTrip = async () => {
     try {

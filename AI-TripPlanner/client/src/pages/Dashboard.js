@@ -1,10 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { toast } from "react-hot-toast";
 import { useAuth } from "../contexts/AuthContext";
 import { useApi } from "../hooks/useApi";
-import { userAPI, tripAPI, aiAPI } from "../services/api";
+import { tripAPI, aiAPI } from "../services/api";
 import { Card, Button, LoadingSpinner, Badge } from "../components/ui";
 import {
   FaPlane,
@@ -16,12 +16,10 @@ import {
   FaArrowRight,
   FaPlus,
   FaStar,
-  FaUsers,
 } from "react-icons/fa";
 
 const Dashboard = () => {
-  const navigate = useNavigate();
-  const { user, hasPermission, getRemainingAiRequests } = useAuth();
+  const { user, getRemainingAiRequests } = useAuth();
   const { data: recentTrips, isLoading: tripsLoading } = useApi(
     ["userTrips"],
     () => tripAPI.getTrips().then((res) => res.data.trips || res.data)

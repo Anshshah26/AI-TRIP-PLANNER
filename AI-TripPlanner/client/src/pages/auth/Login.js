@@ -3,7 +3,7 @@ import { Link, useNavigate, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { useAuth } from "../../contexts/AuthContext";
 import { useFormValidation } from "../../hooks/useFormValidation";
-import { Button, Input, Card, LoadingSpinner } from "../../components/ui";
+import { Button, Input, Card } from "../../components/ui";
 import { FaRoute, FaEye, FaEyeSlash, FaEnvelope, FaLock } from "react-icons/fa";
 
 const Login = () => {

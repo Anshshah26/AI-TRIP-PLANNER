@@ -35,24 +35,24 @@ const Footer = () => {
               smarter, explore better.
             </p>
             <div className="hidden md:flex space-x-4 mt-6">
-              <a
-                href="#"
+              <button
                 className="w-11 h-11 rounded-full bg-gradient-to-r from-blue-500 to-blue-600 flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-lg shadow-blue-500/50"
+                aria-label="Twitter"
               >
                 <FaTwitter className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
+              </button>
+              <button
                 className="w-11 h-11 rounded-full bg-gradient-to-r from-pink-500 to-purple-600 flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-lg shadow-pink-500/50"
+                aria-label="Instagram"
               >
                 <FaInstagram className="h-5 w-5" />
-              </a>
-              <a
-                href="#"
+              </button>
+              <button
                 className="w-11 h-11 rounded-full bg-gradient-to-r from-blue-600 to-blue-700 flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-lg shadow-blue-600/50"
+                aria-label="LinkedIn"
               >
                 <FaLinkedin className="h-5 w-5" />
-              </a>
+              </button>
             </div>
           </div>
 
