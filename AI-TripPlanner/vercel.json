@@ -1,0 +1,11 @@
+{
+  "buildCommand": "cd AI-TripPlanner/client && npm install && npm run build",
+  "outputDirectory": "AI-TripPlanner/client/build",
+  "public": "AI-TripPlanner/client/public",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
